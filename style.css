@@ -1,0 +1,129 @@
+body {
+    font-family: 'Open Sans', sans-serif; /* Updated font */
+    text-align: center;
+    background-color: #f7f7f7; /* Light gray background */
+}
+
+#energy-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form Titles */
+h2 {
+    margin-bottom: 20px; /* Space between title and form elements */
+    font-weight: bold;
+    color: #333; /* Dark gray text */
+}
+
+/* Form Labels */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input Fields */
+input[type="number"] {
+    padding: 15px; /* Padding for input fields */
+    font-size: 18px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%; /* Full width input fields */
+}
+
+/* Radio Buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Label for Radio Buttons */
+label[for="text-only"], label[for="voice-standard"], label[for="voice-exclusive"] {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Active Radio Button */
+input[type="radio"]:checked + label {
+    background-color: #4CAF50; /* Green background for active radio button */
+    color: #fff; /* White text */
+}
+
+/* Button */
+button[type="submit"] {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4CAF50; /* Green background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 20px; /* Space between input fields and button */
+}
+
+/* Button Hover Effect */
+button[type="submit"]:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+}
+
+/* Result Section */
+#result {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light gray background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Result Heading */
+#result h2 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Result List */
+#result ul {
+    list-style: none; /* No bullet points */
+    padding: 0;
+    margin: 0;
+    margin-top: 20px; /* Space between heading and list */
+}
+
+/* Result List Items */
+#result li {
+    padding: 15px; /* Padding for list items */
+    border-bottom: 1px solid #ccc; /* Light gray border */
+    font-weight: bold; /* Bold text for list items */
+    color: #333;
+}
+
+/* Remove bottom border from the last list item */
+#result li:last-child {
+    border-bottom: none;
+}
+
+/* Result Paragraph */
+#result p {
+    margin-bottom: 20px;
+    color: #333;
+}
